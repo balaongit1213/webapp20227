@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: <your-git-repo-url>
+    repoURL: https://github.com/balaongit1213/webapp20227.git
     path: manifests
     targetRevision: main
   destination:
