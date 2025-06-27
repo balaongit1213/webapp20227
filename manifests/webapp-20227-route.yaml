@@ -8,6 +8,6 @@ spec:
     kind: Service
     name: webapp-20227-service
   port:
-    targetPort: 8080
+    targetPort: 5000
   tls:
     termination: edge
