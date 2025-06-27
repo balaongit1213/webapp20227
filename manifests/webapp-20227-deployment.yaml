@@ -18,7 +18,7 @@ spec:
       - name: webapp
         image: bala1213/webapp20227:v3
         ports:
-        - containerPort: 80
+        - containerPort: 5000
         volumeMounts:
         - name: html
           mountPath: /usr/share/nginx/html
