@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: webapp-20227
+  namespace: openshift-gitops
+spec:
+  project: default
+  source:
+    repoURL: <your-git-repo-url>
+    path: manifests
+    targetRevision: main
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: 20227-rosa
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

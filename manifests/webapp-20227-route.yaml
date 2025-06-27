@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  namespace: 20227-rosa
+  name: webapp-20227-route
+spec:
+  to:
+    kind: Service
+    name: webapp-20227-service
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
